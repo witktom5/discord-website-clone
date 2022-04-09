@@ -5,22 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Passion+One:wght@700&family=Poller+One&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Discord Clone</title>
 </head>
 
 <body>
     <nav class="navbar bg-primary">
-        <span>Discord</span>
-        <div class="nav-content">
-            <button class="bg-light">Open Discord</button>
-            <button class="menu-toggle">
-                <svg viewBox="0 0 100 80" width="26.6" height="21.6" class="hamburger">
-                    <rect width="100" height="17"></rect>
-                    <rect y="31" width="100" height="17"></rect>
-                    <rect y="62" width="100" height="17"></rect>
-                </svg>
-            </button>
+        <div class="navbar-container">
+            <img class="logo" src="./assets/logo.svg" alt="">
+            <ul class="nav-list">
+                <li class="nav-link">Download</li>
+                <li class="nav-link">Nitro</li>
+                <li class="nav-link">Safety</li>
+                <li class="nav-link">Support</li>
+                <li class="nav-link">Blog</li>
+                <li class="nav-link">Careers</li>
+            </ul>
+            <div class="nav-content">
+                <button class="bg-light">Open Discord</button>
+                <button class="menu-toggle">
+                    <svg viewBox="0 0 100 80" width="26.6" height="21.6" class="hamburger">
+                        <rect width="100" height="17"></rect>
+                        <rect y="31" width="100" height="17"></rect>
+                        <rect y="62" width="100" height="17"></rect>
+                    </svg>
+                </button>
+            </div>
         </div>
 
     </nav>
@@ -32,10 +45,19 @@
                 </header>
                 <p class="header-paragraph">...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</p>
                 <div class="container-btns">
-                    <button class="btn bg-light">Download for Windows</button>
+                    <button class="btn bg-light"><svg class="download-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                            <g>
+                                <path d="M245,0c-9.5,0-17.2,7.7-17.2,17.2v331.2L169,289.6c-6.7-6.7-17.6-6.7-24.3,0s-6.7,17.6,0,24.3l88.1,88.1
+                                   c3.3,3.3,7.7,5,12.1,5c4.4,0,8.8-1.7,12.1-5l88.1-88.1c6.7-6.7,6.7-17.6,0-24.3c-6.7-6.7-17.6-6.7-24.3,0L262,348.4V17.1
+                                   C262.1,7.6,254.5,0,245,0z" />
+                                <path d="M462.1,472.9v-99.7c0-9.5-7.7-17.2-17.2-17.2s-17.2,7.7-17.2,17.2v82.6H62.2v-82.6c0-9.5-7.7-17.2-17.1-17.2
+                                   s-17.2,7.7-17.2,17.2v99.7c0,9.5,7.7,17.1,17.2,17.1h399.8C454.4,490,462.1,482.4,462.1,472.9z" />
+                            </g>
+                        </svg>
+                        Download for Windows</button>
                     <button class="btn bg-dark">Open Discord in your browser</button>
                 </div>
-                <div class="img-container bg-primary">
+                <div class="img-container">
                     <img src="./assets/headerbg1.svg" alt="" class="img-1">
                     <img src="./assets/headerbg2.svg" alt="" class="img-2">
                     <img src="./assets/headerbg3.svg" alt="" class="img-3">
@@ -45,7 +67,7 @@
         </section>
         <section class="bg-white pd-section">
             <div class="container">
-                <div class="img-container bg-white">
+                <div class="img-container-section bg-white">
                     <img src="./assets/sectionbg1.svg" alt="" class="img">
                 </div>
                 <div class="text-container">
@@ -58,7 +80,7 @@
         </section>
         <section class="bg-light pd-section">
             <div class="container reverse">
-                <div class="img-container bg-light">
+                <div class="img-container-section bg-light">
                     <img src="./assets/sectionbg2.svg" alt="" class="img">
                 </div>
                 <div class="text-container">
@@ -71,7 +93,7 @@
         </section>
         <section class="bg-white pd-section">
             <div class="container">
-                <div class="img-container bg-white">
+                <div class="img-container-section bg-white">
                     <img src="./assets/sectionbg3.svg" alt="" class="img">
                 </div>
                 <div class="text-container">
@@ -89,12 +111,20 @@
                     </h2>
                 </header>
                 <p>Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.</p>
-                <div class="img-container bg-light">
+                <div class="img-container-section bg-light">
                     <img src="./assets/sectionbg4.svg" alt="" class="img">
                 </div>
                 <div class="section-end">
                     <h3>Ready to start your journey?</h3>
-                    <button class="btn bg-secondary btn-wide">Download for Windows</button>
+                    <button class="btn bg-secondary btn-wide"><svg class="download-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                            <g>
+                                <path d="M245,0c-9.5,0-17.2,7.7-17.2,17.2v331.2L169,289.6c-6.7-6.7-17.6-6.7-24.3,0s-6.7,17.6,0,24.3l88.1,88.1
+                               c3.3,3.3,7.7,5,12.1,5c4.4,0,8.8-1.7,12.1-5l88.1-88.1c6.7-6.7,6.7-17.6,0-24.3c-6.7-6.7-17.6-6.7-24.3,0L262,348.4V17.1
+                               C262.1,7.6,254.5,0,245,0z" />
+                                <path d="M462.1,472.9v-99.7c0-9.5-7.7-17.2-17.2-17.2s-17.2,7.7-17.2,17.2v82.6H62.2v-82.6c0-9.5-7.7-17.2-17.1-17.2
+                               s-17.2,7.7-17.2,17.2v99.7c0,9.5,7.7,17.1,17.2,17.1h399.8C454.4,490,462.1,482.4,462.1,472.9z" />
+                            </g>
+                        </svg>Download for Windows</button>
                 </div>
             </div>
         </section>
@@ -103,12 +133,12 @@
         <div class="footer-container">
             <div class="footer-main">
                 <h4>IMAGINE A PLACE</h4>
-                <p>Flag English USA</p>
+                <p class="lang-select"><img src="./assets/enflag.png" alt="">English, USA</p>
                 <div class="social">
-                    <span>TT</span>
-                    <span>IG</span>
-                    <span>FB</span>
-                    <span>YT</span>
+                    <span><img src="./assets/twitter.svg" alt=""></span>
+                    <span><img src="./assets/instagram.svg" alt=""></span>
+                    <span><img src="./assets/facebook.svg" alt=""></span>
+                    <span><img src="./assets/youtube.svg" alt=""></span>
                 </div>
             </div>
             <div class="footer-links">
@@ -148,12 +178,11 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <span>Discord</span>
+            <img class="logo" src="./assets/logo.svg" alt="">
             <button class="bg-secondary btn-footer">Open Discord</button>
         </div>
 
     </footer>
-
 </body>
 
 </html>
